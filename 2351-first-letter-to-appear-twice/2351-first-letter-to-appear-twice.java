@@ -5,6 +5,6 @@ class Solution {
             map.put(ch,map.getOrDefault(ch,0)+1);
         if(map.get(ch)==2)
             return ch;
-        }return '\0';
+        }return 1;
     }
 }
