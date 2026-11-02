@@ -1,9 +1,11 @@
 class Solution {
-    public List<Integer> stableMountains(int[] height, int threshold) {
-       List<Integer> list=new ArrayList<>();
-        for(int i=1;i<height.length;i++){
-            if(height[i-1]>threshold)
-            list.add(i);
-        }return list;
+    public List<Integer> stableMountains(int[] nums,int threshold){
+       ArrayList<Integer> ans=new ArrayList<>();
+       for(int i=1;i<nums.length;i++){
+        if(nums[i-1]>threshold){
+            ans.add(i);
+        }
+       }
+       return ans;
     }
 }
